@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sonali Shaw — Projects</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #1d1d1d;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      margin-top: 30px;
+      font-size: 2.2rem;
+      font-weight: 800;
+    }
+
+    .subheader {
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin-top: 6px;
+      opacity: 0.9;
+    }
+
+    /* Full-width project box */
+    .project-box {
+      width: 90%;
+      max-width: 1000px;
+      background-color: #2c2c2c;
+      padding: 20px 30px; /* reduced top padding */
+      box-sizing: border-box;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      display: flex;
+      gap: 30px;
+      flex-direction: column; /* allow subheader and content */
+      margin-top: 20px; /* less vertical space between boxes */
+    }
+
+    /* Slightly more hover effect spacing */
+    .project-box:hover {
+      background-color: #3d3d3d;
+    }
+
+    /* Project title and click info */
+    .project-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    /* Reduced margin to bring click info closer to title */
+    .project-extra {
+      font-size: 0.95rem;
+      font-style: italic;
+      color: #aaa;
+      margin-top: 2px; /* very close to title now */
+      margin-bottom: 10px;
+    }
+
+    /* Content row inside project box */
+    .project-content {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    /* Left: image */
+    .project-left {
+      flex: 0 0 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .project-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* Right: description */
+    .project-right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .project-desc {
+      font-size: 1rem;
+      line-height: 1.5;
+      width: 100%;
+    }
+
+    /* Responsive */
+    @media (max-width: 800px) {
+      .project-content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .project-left {
+        width: 60%;
+      }
+
+      .project-right {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>Sonali Shaw</header>
+  <div class="subheader">Personal Projects</div>
+
+  <!-- Coloretto box -->
+  <div class="project-box" onclick="window.location.href='coloretto.html'">
+    <div class="project-title">Coloretto</div>
+    <div class="project-extra">Click here for code, demo, and more</div>
+    <div class="project-content">
+      <div class="project-left">
+        <img src="images/coloretto.jpg" alt="Coloretto preview" class="project-image">
+      </div>
+      <div class="project-right">
+        <div class="project-desc">
+          Coloretto description here.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cuber box -->
+  <div class="project-box" onclick="window.location.href='cuber.html'">
+    <div class="project-title">Cuber</div>
+    <div class="project-extra">Click here for code, demo, and more</div>
+    <div class="project-content">
+      <div class="project-left">
+        <img src="images/cuber.jpg" alt="Cuber preview" class="project-image">
+      </div>
+      <div class="project-right">
+        <div class="project-desc">
+          Cuber description here.
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
